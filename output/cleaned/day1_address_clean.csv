@@ -1,0 +1,51 @@
+Customer_ID,Country,Region,State,City,Postal_Code
+701,United States,EAST,New York,Hartford,81510
+702,United States,SOUTH,Texas,Houston,95047
+703,United States,SOUTH,Alabama,New Orleans,94513
+704,United States,NORTH,Illinois,Minneapolis,99864
+705,United States,NORTH,Ohio,Milwaukee,68939
+706,United States,SOUTH,Florida,Dallas,90295
+707,United States,EAST,Massachusetts,Philadelphia,93453
+708,United States,SOUTH,Alabama,Dallas,30072
+709,United States,EAST,Pennsylvania,Hartford,57203
+710,United States,NORTH,Wisconsin,Detroit,47599
+711,United States,SOUTH,Florida,Dallas,43713
+712,United States,SOUTH,Florida,Atlanta,12744
+713,United States,SOUTH,Alabama,Atlanta,28872
+714,United States,EAST,New York,Newark,63788
+715,United States,EAST,Connecticut,Boston,62721
+716,United States,EAST,New Jersey,Philadelphia,37276
+717,United States,SOUTH,Alabama,Dallas,64752
+718,United States,WEST,Nevada,Las Vegas,68181
+719,United States,SOUTH,Alabama,Dallas,57652
+720,United States,EAST,Massachusetts,Philadelphia,97211
+721,United States,WEST,Nevada,San Francisco,79459
+722,United States,SOUTH,Florida,Miami,38437
+723,United States,WEST,Oregon,Phoenix,35506
+724,United States,EAST,Connecticut,Philadelphia,70735
+725,United States,WEST,Arizona,Las Vegas,59127
+726,United States,EAST,Massachusetts,Boston,61488
+727,United States,EAST,New Jersey,Newark,24240
+728,United States,WEST,Arizona,Las Vegas,49363
+729,United States,EAST,Connecticut,Newark,16669
+730,United States,SOUTH,Florida,Miami,54260
+731,United States,SOUTH,Louisiana,Miami,96461
+732,United States,EAST,Pennsylvania,Hartford,66594
+733,United States,WEST,Oregon,Las Vegas,13124
+734,United States,SOUTH,Florida,Dallas,84369
+735,United States,NORTH,Wisconsin,Minneapolis,99211
+736,United States,SOUTH,Louisiana,Miami,94048
+737,United States,NORTH,Illinois,Cleveland,35927
+738,United States,NORTH,Wisconsin,Milwaukee,51483
+739,United States,WEST,Nevada,San Francisco,27112
+740,United States,NORTH,Illinois,Minneapolis,90000
+741,United States,SOUTH,Louisiana,New Orleans,92324
+742,United States,WEST,California,Los Angeles,18566
+743,United States,WEST,California,Los Angeles,11136
+744,United States,NORTH,Minnesota,Minneapolis,21789
+745,United States,NORTH,Michigan,Minneapolis,36608
+746,United States,EAST,New Jersey,Boston,50312
+747,United States,SOUTH,Texas,Atlanta,91688
+748,United States,WEST,Washington,Phoenix,68538
+749,United States,NORTH,Illinois,Minneapolis,32966
+750,United States,WEST,Washington,Seattle,23303

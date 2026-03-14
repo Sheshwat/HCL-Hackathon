@@ -1,0 +1,21 @@
+Customer_ID,Customer_Name,Policy_Id,Current_Policy_Type_Id,Current_Policy_Type,Current_Policy_Name,Previous_Policy_Type_Id,Previous_Policy_Type
+400,Mrs. Ursula Taylor,10804,PT002,WholeLife,Term Policy 10804,PT003,Auto
+373,Mr. Rachel Thomas,10750,PT001,Auto,Auto Policy 10750,PT003,Health
+476,Dr. Karen Brown,10958,PT004,Health,Home Policy 10958,PT002,Home
+595,Mr. Charles Jones,11199,PT001,Auto,Auto Policy 11199,PT002,WholeLife
+241,Professor Diana Kirby,10492,PT001,Auto,Auto Policy 10492,PT002,Term
+160,Ms. Quinn Potter,10324,PT001,Auto,Auto Policy 10324,PT002,Home
+431,Mr. Quinn Jackson,10866,PT001,Auto,Term Policy 10866,PT005,Home
+82,Ms. Patrick Miller,10166,PT001,Auto,Auto Policy 10166,PT005,Auto
+161,Professor Charles Taylor,10326,PT001,Auto,Auto Policy 10326,PT005,Auto
+233,Ms. Wendy Kirby,10473,PT002,WholeLife,WholeLife Policy 10473,PT001,Auto
+47,Dr. Brian Johnson,10092,PT004,Health,Health Policy 10092,PT003,Auto
+422,Mrs. Nathan Jones,10847,PT004,Health,WholeLife Policy 10847,PT002,WholeLife
+9,Mrs. Tina Dillon,10015,PT002,WholeLife,WholeLife Policy 10015,PT005,Home
+374,Mrs. Gwendolyn Thompson,10753,PT003,Term,Term Policy 10753,PT002,Auto
+578,Ms. Karen Davis,11162,PT004,Health,Health Policy 11162,PT005,Auto
+507,Mr. Ursula Tyson,11022,PT004,Health,Health Policy 11022,PT001,Auto
+496,Mrs. Karen Harris,10999,PT001,Auto,Term Policy 10999,PT004,Auto
+490,Mrs. Gwendolyn Wilson,10985,PT003,Term,Home Policy 10985,PT005,Home
+105,Mrs. Nathan Johnson,10211,PT004,Health,Health Policy 10211,PT001,Health
+529,Dr. Henry Thompson,11057,PT003,Term,Term Policy 11057,PT004,Auto

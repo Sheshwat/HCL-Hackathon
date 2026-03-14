@@ -1,0 +1,154 @@
+2026-03-14 17:19:14,490  INFO      
+############################################################
+2026-03-14 17:19:14,491  INFO        INSURANCE POLICY DATA ENGINEERING PIPELINE
+2026-03-14 17:19:14,491  INFO        Started: 2026-03-14 17:19:14
+2026-03-14 17:19:14,491  INFO      ############################################################
+2026-03-14 17:19:14,491  INFO      
+============================================================
+2026-03-14 17:19:14,491  INFO        LOADING DAY0
+2026-03-14 17:19:14,491  INFO      ============================================================
+2026-03-14 17:19:14,499  INFO        Loaded customers: 700 rows from day0_customers.csv
+2026-03-14 17:19:14,510  INFO        Loaded policies: 800 rows from day0_policies.csv
+2026-03-14 17:19:14,514  INFO        Loaded address: 700 rows from day0_address.csv
+2026-03-14 17:19:14,523  INFO        Loaded transactions: 1500 rows from day0_transactions.csv
+2026-03-14 17:19:14,523  INFO      
+  → Validation Stage [day0]
+2026-03-14 17:19:14,556  INFO      
+  ── Validation Report ──
+2026-03-14 17:19:14,556  INFO        ✅  customers        in=  700  out=  700  | All checks passed.
+2026-03-14 17:19:14,556  INFO        ✅  policies         in=  800  out=  800  | All checks passed.
+2026-03-14 17:19:14,556  INFO        ✅  address          in=  700  out=  700  | All checks passed.
+2026-03-14 17:19:14,556  INFO        ✅  transactions     in= 1500  out= 1500  | All checks passed.
+2026-03-14 17:19:14,557  INFO      
+  → Standardization Stage [day0]
+2026-03-14 17:19:14,583  INFO      [STANDARDIZE] customers: 700 rows standardized
+2026-03-14 17:19:14,610  INFO      [STANDARDIZE] policies: 800 rows standardized
+2026-03-14 17:19:14,622  INFO      [STANDARDIZE] address: 700 rows standardized
+2026-03-14 17:19:14,641  INFO      [STANDARDIZE] transactions: 1500 rows standardized
+2026-03-14 17:19:14,651  INFO        Saved: day0_customers_clean.csv (700 rows)
+2026-03-14 17:19:14,666  INFO        Saved: day0_policies_clean.csv (800 rows)
+2026-03-14 17:19:14,672  INFO        Saved: day0_address_clean.csv (700 rows)
+2026-03-14 17:19:14,685  INFO        Saved: day0_transactions_clean.csv (1500 rows)
+2026-03-14 17:19:14,685  INFO      
+  → Transformation Stage [day0]
+2026-03-14 17:19:14,688  INFO      [TRANSFORM] Installment counts computed
+2026-03-14 17:19:14,702  INFO      [TRANSFORM] Late fee: 30 late payments found, fee rate 2.0%
+2026-03-14 17:19:14,709  INFO      [TRANSFORM] Marital status changes: 0 customers changed status
+2026-03-14 17:19:14,719  INFO      [TRANSFORM] dim_customer: 700 rows built
+2026-03-14 17:19:14,721  INFO      [TRANSFORM] dim_policy: 800 rows built
+2026-03-14 17:19:14,723  INFO      [TRANSFORM] dim_address: 700 rows built
+2026-03-14 17:19:14,838  INFO      [TRANSFORM] fact_transactions: 1500 rows built
+2026-03-14 17:19:14,840  INFO      
+  → Loading to Warehouse [day0]
+2026-03-14 17:19:15,010  INFO        Warehouse dim_customer: 3106 total rows
+2026-03-14 17:19:15,360  INFO        Warehouse dim_policy: 4400 total rows
+2026-03-14 17:19:15,469  INFO        Warehouse dim_address: 3100 total rows
+2026-03-14 17:19:15,819  INFO        Warehouse fact_transactions: 13887 total rows
+2026-03-14 17:19:15,822  INFO      
+  ✅  DAY0 complete.
+
+2026-03-14 17:19:15,822  INFO      
+============================================================
+2026-03-14 17:19:15,822  INFO        LOADING DAY1
+2026-03-14 17:19:15,822  INFO      ============================================================
+2026-03-14 17:19:15,824  INFO        Loaded customers: 51 rows from day1_customers.csv
+2026-03-14 17:19:15,828  INFO        Loaded policies: 200 rows from day1_policies.csv
+2026-03-14 17:19:15,829  INFO        Loaded address: 50 rows from day1_address.csv
+2026-03-14 17:19:15,834  INFO        Loaded transactions: 700 rows from day1_transactions.csv
+2026-03-14 17:19:15,834  INFO      
+  → Validation Stage [day1]
+2026-03-14 17:19:15,857  INFO      
+  ── Validation Report ──
+2026-03-14 17:19:15,858  INFO        ✅  customers        in=   51  out=   51  | All checks passed.
+2026-03-14 17:19:15,858  INFO        ✅  policies         in=  200  out=  200  | All checks passed.
+2026-03-14 17:19:15,858  INFO        ✅  address          in=   50  out=   50  | All checks passed.
+2026-03-14 17:19:15,858  INFO        ✅  transactions     in=  700  out=  700  | All checks passed.
+2026-03-14 17:19:15,858  INFO      
+  → Standardization Stage [day1]
+2026-03-14 17:19:15,877  INFO      [STANDARDIZE] customers: 51 rows standardized
+2026-03-14 17:19:15,894  INFO      [STANDARDIZE] policies: 200 rows standardized
+2026-03-14 17:19:15,903  INFO      [STANDARDIZE] address: 50 rows standardized
+2026-03-14 17:19:15,914  INFO      [STANDARDIZE] transactions: 700 rows standardized
+2026-03-14 17:19:15,916  INFO        Saved: day1_customers_clean.csv (51 rows)
+2026-03-14 17:19:15,919  INFO        Saved: day1_policies_clean.csv (200 rows)
+2026-03-14 17:19:15,921  INFO        Saved: day1_address_clean.csv (50 rows)
+2026-03-14 17:19:15,926  INFO        Saved: day1_transactions_clean.csv (700 rows)
+2026-03-14 17:19:15,926  INFO      
+  → Transformation Stage [day1]
+2026-03-14 17:19:15,928  INFO      [TRANSFORM] Installment counts computed
+2026-03-14 17:19:15,937  INFO      [TRANSFORM] Late fee: 0 late payments found, fee rate 2.0%
+2026-03-14 17:19:15,944  INFO      [TRANSFORM] Policy changes detected: 0 policies changed type
+2026-03-14 17:19:15,948  INFO      [TRANSFORM] Marital status changes: 0 customers changed status
+2026-03-14 17:19:15,953  INFO      [TRANSFORM] dim_customer: 51 rows built
+2026-03-14 17:19:15,954  INFO      [TRANSFORM] dim_policy: 200 rows built
+2026-03-14 17:19:15,955  INFO      [TRANSFORM] dim_address: 50 rows built
+2026-03-14 17:19:15,973  INFO      [TRANSFORM] fact_transactions: 700 rows built
+2026-03-14 17:19:15,974  INFO      
+  → Loading to Warehouse [day1]
+2026-03-14 17:19:16,020  INFO        Warehouse dim_customer: 3157 total rows
+2026-03-14 17:19:16,287  INFO        Warehouse dim_policy: 4600 total rows
+2026-03-14 17:19:16,385  INFO        Warehouse dim_address: 3150 total rows
+2026-03-14 17:19:17,063  INFO        Warehouse fact_transactions: 14587 total rows
+2026-03-14 17:19:17,065  INFO      
+  ✅  DAY1 complete.
+
+2026-03-14 17:19:17,066  INFO      
+============================================================
+2026-03-14 17:19:17,066  INFO        LOADING DAY2
+2026-03-14 17:19:17,066  INFO      ============================================================
+2026-03-14 17:19:17,068  INFO        Loaded customers: 51 rows from day2_customers.csv
+2026-03-14 17:19:17,071  INFO        Loaded policies: 200 rows from day2_policies.csv
+2026-03-14 17:19:17,073  INFO        Loaded address: 50 rows from day2_address.csv
+2026-03-14 17:19:17,082  INFO        Loaded transactions: 1929 rows from day2_transactions.csv
+2026-03-14 17:19:17,082  INFO      
+  → Validation Stage [day2]
+2026-03-14 17:19:17,115  INFO      
+  ── Validation Report ──
+2026-03-14 17:19:17,116  INFO        ✅  customers        in=   51  out=   51  | All checks passed.
+2026-03-14 17:19:17,116  INFO        ✅  policies         in=  200  out=  200  | All checks passed.
+2026-03-14 17:19:17,116  INFO        ✅  address          in=   50  out=   50  | All checks passed.
+2026-03-14 17:19:17,116  INFO        ✅  transactions     in= 1929  out= 1929  | All checks passed.
+2026-03-14 17:19:17,116  INFO      
+  → Standardization Stage [day2]
+2026-03-14 17:19:17,135  INFO      [STANDARDIZE] customers: 51 rows standardized
+2026-03-14 17:19:17,154  INFO      [STANDARDIZE] policies: 200 rows standardized
+2026-03-14 17:19:17,163  INFO      [STANDARDIZE] address: 50 rows standardized
+2026-03-14 17:19:17,183  INFO      [STANDARDIZE] transactions: 1929 rows standardized
+2026-03-14 17:19:17,186  INFO        Saved: day2_customers_clean.csv (51 rows)
+2026-03-14 17:19:17,190  INFO        Saved: day2_policies_clean.csv (200 rows)
+2026-03-14 17:19:17,191  INFO        Saved: day2_address_clean.csv (50 rows)
+2026-03-14 17:19:17,202  INFO        Saved: day2_transactions_clean.csv (1929 rows)
+2026-03-14 17:19:17,202  INFO      
+  → Transformation Stage [day2]
+2026-03-14 17:19:17,204  INFO      [TRANSFORM] Installment counts computed
+2026-03-14 17:19:17,218  INFO      [TRANSFORM] Late fee: 10 late payments found, fee rate 2.0%
+2026-03-14 17:19:17,227  INFO      [TRANSFORM] Policy changes detected: 0 policies changed type
+2026-03-14 17:19:17,231  INFO      [TRANSFORM] Marital status changes: 0 customers changed status
+2026-03-14 17:19:17,236  INFO      [TRANSFORM] dim_customer: 51 rows built
+2026-03-14 17:19:17,238  INFO      [TRANSFORM] dim_policy: 200 rows built
+2026-03-14 17:19:17,239  INFO      [TRANSFORM] dim_address: 50 rows built
+2026-03-14 17:19:17,256  INFO      [TRANSFORM] fact_transactions: 1929 rows built
+2026-03-14 17:19:17,257  INFO      
+  → Loading to Warehouse [day2]
+2026-03-14 17:19:17,309  INFO        Warehouse dim_customer: 3208 total rows
+2026-03-14 17:19:17,521  INFO        Warehouse dim_policy: 4800 total rows
+2026-03-14 17:19:17,635  INFO        Warehouse dim_address: 3200 total rows
+2026-03-14 17:19:18,372  INFO        Warehouse fact_transactions: 16516 total rows
+2026-03-14 17:19:18,374  INFO      
+  ✅  DAY2 complete.
+
+2026-03-14 17:19:18,374  INFO      
+============================================================
+2026-03-14 17:19:18,374  INFO        FINAL WAREHOUSE SUMMARY
+2026-03-14 17:19:18,374  INFO      ============================================================
+2026-03-14 17:19:18,381  INFO        dim_address.csv                          →   3200 rows
+2026-03-14 17:19:18,397  INFO        dim_customer.csv                         →   3208 rows
+2026-03-14 17:19:18,421  INFO        dim_policy.csv                           →   4800 rows
+2026-03-14 17:19:18,467  INFO        fact_transactions.csv                    →  16516 rows
+2026-03-14 17:19:18,468  INFO      
+  Validation report saved: /home/deeptanshu/Desktop/insurance_pipeline/output/logs/validation_report.json
+2026-03-14 17:19:18,468  INFO      
+############################################################
+2026-03-14 17:19:18,468  INFO        PIPELINE COMPLETED SUCCESSFULLY
+2026-03-14 17:19:18,469  INFO      ############################################################
+
